@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottomSheet"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/round_bg"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="0dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:text="KETERANGAN"
+            android:textColor="#fff" />
+
+
+        <TextView
+            android:id="@+id/tv_lokasi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/baseline_location_on_24"
+            android:drawablePadding="5dp"
+            android:drawableTint="@color/danger"
+            android:padding="12dp"
+            android:text="740 Valencia St, San Fracisco, CA" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Keterangan"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tvketerangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen12"
+            android:weightSum="4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tanggal"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tvtanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/dimen12">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Deskripsi"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/tvdeskripsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen12"
+            android:layout_margin="@dimen/dimen16"
+            android:text="Detail Booking"
+            app:layout_constraintBottom_toBottomOf="parent" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

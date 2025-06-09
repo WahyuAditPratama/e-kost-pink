@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen18"
+    tools:context=".activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/logoapp_Login"
+        android:layout_width="fill_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="@dimen/dimen24"
+        android:src="@drawable/logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48sp"
+        android:text="LOGIN FORM"
+        android:textColor="@color/black"
+        android:textSize="@dimen/size16"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logoapp_Login" />
+
+    <EditText
+        android:id="@+id/txtusername"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="@dimen/dimen20"
+        android:background="@drawable/bg_input_active"
+        android:hint="Username"
+        android:paddingHorizontal="@dimen/dimen16"
+        android:paddingVertical="@dimen/dimen12"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_input_active"
+        app:boxBackgroundMode="none"
+        app:hintEnabled="false"
+        app:layout_constraintTop_toBottomOf="@id/txtusername"
+        app:passwordToggleEnabled="true">
+
+        <EditText
+            android:id="@+id/txtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:autofillHints="password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:maxLength="18"
+            android:padding="@dimen/dimen12" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen20"
+        android:padding="@dimen/dimen12"
+        android:text="@string/masuk"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/belum_memiliki_akun"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/tvregister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/daftar"
+            android:textColor="@color/secondaryColor"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

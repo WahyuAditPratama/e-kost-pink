@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+
+<!--                <FrameLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="250dp"-->
+<!--                    android:background="@drawable/gradient1"-->
+<!--                    android:elevation="4dp"-->
+<!--                    android:visibility="visible">-->
+
+<!--                    <ImageView-->
+<!--                        android:id="@+id/imggambar"-->
+<!--                        android:layout_width="fill_parent"-->
+<!--                        android:layout_height="match_parent"-->
+<!--                        android:layout_gravity="center" />-->
+<!--                </FrameLayout>-->
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Tittle"
+                android:paddingHorizontal="@dimen/dimen16"
+                android:textColor="@color/primaryColor"
+                android:textSize="@dimen/size18"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/linear1" />
+
+            <TextView
+                android:id="@+id/txtdate"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:format24Hour="HH:mm:ss"
+                android:gravity="right"
+
+                android:paddingHorizontal="@dimen/dimen16"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txttitle" />
+
+
+            <ImageView
+                android:id="@+id/img_gambar"
+                android:layout_width="fill_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="center"
+                android:src="@drawable/user"
+                android:layout_marginTop="6dp"
+                android:paddingHorizontal="@dimen/dimen16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtdate"/>
+
+
+            <WebView
+                android:id="@+id/txtview"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="6dp"
+                android:paddingHorizontal="@dimen/dimen16"
+                app:layout_constraintTop_toBottomOf="@id/img_gambar" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ScrollView>
+   </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

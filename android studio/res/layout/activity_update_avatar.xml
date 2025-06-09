@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/dimen18"
+    tools:context=".activity.UpdateAvatar"
+    tools:viewBindingIgnore="false">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Upload Your Avatar"
+        android:textSize="@dimen/size22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="148dp"
+        android:layout_height="148dp"
+        android:layout_marginTop="@dimen/dimen24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textView4">
+
+        <io.github.florent37.shapeofview.shapes.CircleView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shape_circle_borderColor="@color/grey"
+            app:shape_circle_borderWidth="3dp">
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/user" />
+        </io.github.florent37.shapeofview.shapes.CircleView>
+
+        <LinearLayout
+            android:id="@+id/btn_take"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/bg_ellipse"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="kamera"
+                android:src="@drawable/ic_baseline_photo_camera_24" />
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btn_updateavatar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/size24"
+        android:layout_marginTop="@dimen/dimen36"
+        android:padding="@dimen/dimen12"
+        android:text="Update Avatar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+
+</LinearLayout>

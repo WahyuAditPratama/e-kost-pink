@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">E-Kost Pink</string>
+    <string name="belum_memiliki_akun">Dont have an account?</string>
+    <string name="daftar">REGISTER</string>
+    <string name="masuk">LOGIN</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="ulangi_password">Repeat Password</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="im_there">Saya disini</string>
+
+</resources>

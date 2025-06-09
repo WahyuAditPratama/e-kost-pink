@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    Color Usable-->
+    <color name="primaryColor">#5759FF</color>
+    <color name="secondaryColor">#E95696</color>
+    <color name="danger">#ED2B2A</color>
+    <color name="warning">#FF8400</color>
+    <color name="greyStrip">#CFCFCF</color>
+    <color name="grey">#F6F1F1</color>
+    <color name="grey_muda">#F6F1F1</color>
+    <color name="shimmerGrey">#dddddd</color>
+    <color name="soft_pink">#E3ADC7</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+     <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="button_color">#D5EAE3</color>
+    <color name="button_color2">#FEE7D0</color>
+    <color name="button_color3">#E6E5FA</color>
+
+</resources>

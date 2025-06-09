@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.AccountFragment">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/primaryColor"
+        android:minHeight="?attr/actionBarSize"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Account"
+        app:titleCentered="true"
+        app:titleTextColor="@color/white" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dimen24"
+        tools:viewBindingIgnore="false">
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/bg_card"
+            android:padding="@dimen/dimen12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_name"
+                android:text="email" />
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_email"
+                android:text="phone" />
+
+
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentEnd="true"
+
+                android:scaleType="centerCrop"
+                android:src="@drawable/user" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/dimen12"
+            android:background="@color/grey"
+            app:layout_constraintTop_toBottomOf="@id/relativeLayout6" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:text="Settings"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btn_profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12">
+
+                <ImageView
+                    android:id="@+id/ic_profile"
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:src="@drawable/ic_baseline_account_box_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Pengaturan Akun"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_next"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ic_next"
+                    android:layout_marginStart="@dimen/dimen32"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:background="@color/grey_muda" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/ic_gantiemail"
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:src="@drawable/ic_baseline_email_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_gantiemail"
+                    android:text="Ganti Email"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_next2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ic_next2"
+                    android:layout_marginStart="@dimen/dimen32"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:background="@color/grey_muda" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/btn_changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12">
+
+                <ImageView
+                    android:id="@+id/ic_password"
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:src="@drawable/ic_baseline_key_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_password"
+                    android:text="Update Password"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_next3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ic_next3"
+                    android:layout_marginStart="@dimen/dimen32"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:background="@color/grey_muda" />
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:text="About"
+                android:textColor="@color/black"
+                android:textSize="@dimen/size18"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:id="@+id/btn_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12">
+
+                <ImageView
+                    android:id="@+id/ic_tentang"
+                    android:layout_width="@dimen/dimen20"
+                    android:layout_height="@dimen/dimen20"
+                    android:src="@drawable/ic_baseline_info_24" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_tentang"
+                    android:text="About"
+                    android:textColor="@color/black" />
+
+                <ImageView
+                    android:id="@+id/ic_next4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:src="@drawable/ic_baseline_keyboard_arrow_right_24" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/ic_next4"
+                    android:layout_marginStart="@dimen/dimen32"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:background="@color/grey_muda" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen12"
+            android:backgroundTint="@android:color/holo_orange_dark"
+            android:padding="@dimen/dimen12"
+            android:text="Logout"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:background="@color/white"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        card_view:cardBackgroundColor="@color/white"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="5dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="220dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/txtkategori"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/primaryColor"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingEnd="8dp"
+                android:paddingBottom="4dp"
+                android:text="New !!!"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="0dp"
+                android:background="#D9ffffff"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/image"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:maxLines="1"
+                    android:text="Winter is coming"
+                    android:textColor="@color/primaryColor"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtdeskripsi"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtnama"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginBottom="2dp"
+                    android:maxLines="2"
+                    android:text="Winter is coming"
+                    android:textSize="12dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

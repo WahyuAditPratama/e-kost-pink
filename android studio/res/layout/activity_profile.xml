@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/header_cover_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:background="@color/primaryColor"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/imgavatar"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@+id/header_cover_image"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="-60dp"
+                    android:elevation="5dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/user" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/header_cover_image"
+                    android:background="@color/secondaryColor"
+                    android:elevation="4dp"
+                    android:paddingBottom="24dp">
+
+                    <Button
+                        android:id="@+id/btn_editavatar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="37dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_gravity="top"
+                        android:layout_marginTop="76dp"
+
+                        android:text="Edit Avatar" />
+
+                    <TextView
+                        android:id="@+id/tvnama"
+                        android:layout_width="wrap_content"
+
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/btn_editavatar"
+                        android:layout_centerHorizontal="true"
+                        android:text="Account Name"
+                        android:textColor="#fff"
+                        android:textSize="24sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvemail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tvnama"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="Email Account"
+                        android:textColor="#fff"
+                        android:textSize="14sp" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen24"
+                android:layout_marginBottom="70dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="@dimen/dimen12"
+                app:layout_constraintTop_toBottomOf="@id/header">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Nama"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtnama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:autofillHints="nama_customer"
+                    android:background="@drawable/bg_input_active"
+                    android:hint="Nama"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/dimen12"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Email"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:autofillHints="emailAddress"
+                    android:background="@drawable/bg_input_active"
+                    android:hint="@string/email"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/dimen12"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Telepon"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txttelepon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:autofillHints="telepon"
+                    android:background="@drawable/bg_input_active"
+                    android:hint="Telepon"
+                    android:inputType="phone"
+                    android:padding="@dimen/dimen12"
+                    android:textSize="@dimen/size14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Alamat"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtalamat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:autofillHints="name"
+                    android:background="@drawable/bg_input_satu"
+                    android:hint="Alamat"
+                    android:lines="3"
+                    android:padding="12dp"
+                    android:textSize="@dimen/size14" />
+
+
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/dimen12"
+                            android:layout_toEndOf="@id/ic_profile"
+                            android:text="Tanggal Lahir"
+                            android:textColor="@color/black" />
+
+                        <EditText
+                            android:id="@+id/txttanggallahir"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:autofillHints="name"
+                            android:background="@drawable/bg_input_satu"
+                            android:hint="Tanggal Lahir"
+                            android:padding="12dp"
+                            android:textSize="@dimen/size14" />
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:layout_toEndOf="@id/ic_profile"
+                    android:text="Username"
+                    android:textColor="@color/black" />
+
+                <EditText
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:autofillHints="telepon"
+                    android:background="@drawable/bg_input_active"
+
+                    android:hint="Username"
+                    android:padding="@dimen/dimen12"
+                    android:textSize="@dimen/size14" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_editProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen12"
+        android:layout_marginBottom="@dimen/dimen12"
+        android:backgroundTint="@color/primaryColor"
+        android:padding="@dimen/dimen12"
+        android:text="EDIT PROFIL"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

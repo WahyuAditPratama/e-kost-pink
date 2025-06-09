@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_muda"
+    tools:context=".fragment.FeaturedFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:background="@color/soft_pink"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <View
+                    android:id="@+id/iv_menuNavBeranda"
+                    android:layout_width="fill_parent"
+                    android:layout_height="10dp"
+                    android:padding="@dimen/dimen12"
+                    android:layout_marginLeft="@dimen/dimen12"
+                    android:layout_marginRight="@dimen/dimen12"
+                    android:layout_marginTop="@dimen/dimen12"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dimen12"
+                    app:layout_constraintTop_toBottomOf="@id/iv_menuNavBeranda"
+                    tools:layout_editor_absoluteX="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_logo"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        app:cardCornerRadius="40dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_logo"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:paddingTop="10dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center_horizontal"
+                            android:src="@drawable/logo2" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/tv_beranda"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen12"
+                        android:text="Beranda"
+                        android:textColor="@color/primaryColor"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/size22"
+                        app:layout_constraintLeft_toRightOf="@id/card_logo"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen12"
+                        android:layout_marginTop="6dp"
+                        android:text="Aplikasi E-Kost Pink"
+                        android:textColor="@color/primaryColor"
+                        android:textSize="@dimen/size16"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/card_logo"
+                        app:layout_constraintTop_toBottomOf="@id/tv_beranda" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/relativeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/dimen12"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/bg_card"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/dimen12"
+                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                    tools:layout_editor_absoluteX="12dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/card_avatar"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        app:cardCornerRadius="30dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <ImageView
+                            android:id="@+id/iv_avatar"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_gravity="center"
+                            android:src="@drawable/user" />
+                    </androidx.cardview.widget.CardView>
+
+
+                    <TextView
+                        android:id="@+id/tv_nama"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen12"
+                        android:text="Halo , Pengguna Aplikasi"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size14"
+                        android:textStyle="normal"
+                        app:layout_constraintLeft_toRightOf="@id/card_avatar"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen12"
+                        android:layout_marginTop="6dp"
+                        android:text="Selamat datang di E-Kost Pink"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/size16"
+                        android:textStyle="bold"
+                        app:layout_constraintLeft_toRightOf="@id/card_avatar"
+                        app:layout_constraintTop_toBottomOf="@id/tv_nama" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dimen16"
+                    app:layout_constraintTop_toBottomOf="@+id/relativeLayout">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Menu Utama"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Menu Layanan E-Kost Pink"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+                <GridLayout
+                    android:id="@+id/gridLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:alignmentMode="alignBounds"
+                    android:columnCount="3"
+                    android:paddingHorizontal="@dimen/dimen16"
+                    android:rowOrderPreserved="false"
+                    android:useDefaultMargins="true"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/linearLayout2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_room"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/button_color"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/baseline_security_update_warning_24"
+                                app:tint="@color/warning" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Informasi Kamar"
+                                    android:gravity="center"
+                                    android:textColor="@color/primaryColor"
+                                    android:textSize="@dimen/size16"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_booking"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/button_color3"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/ic_twotone_article_24"
+                                app:tint="@color/danger" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                    android:text="Pemesanan Kamar"
+                                    android:gravity="center"
+                                    android:textColor="@color/primaryColor"
+                                    android:textSize="@dimen/size16"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/btn_tagihan"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_columnWeight="1"
+                        android:layout_marginBottom="12dp"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="2dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/button_color2"
+                            android:gravity="center"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <ImageView
+                                android:layout_width="60dp"
+                                android:layout_height="60dp"
+                                android:src="@drawable/ic_twotone_article_24"
+                                app:tint="@color/primaryColor" />
+
+
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/quicksand_bold"
+                                  android:gravity="center"
+                                    android:text="Tagihan Bulananan"
+                                    android:textColor="@color/primaryColor"
+                                    android:textSize="@dimen/size16"
+                                    android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                </GridLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/dimen16"
+                    app:layout_constraintTop_toBottomOf="@+id/gridLayout1">
+
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Voucher Gratis"
+                        android:textColor="@color/black"
+                        android:textSize="16dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Voucher Gratis Bagi Pengguna Baru "
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+
+                <ImageView
+                    android:id="@+id/imgVoucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:paddingHorizontal="@dimen/dimen12"
+                    android:layout_marginTop="@dimen/dimen12"
+                    android:src="@drawable/voucher"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout3"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</FrameLayout>

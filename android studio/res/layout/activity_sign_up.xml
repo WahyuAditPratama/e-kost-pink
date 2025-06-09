@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/dimen18"
+    android:scrollbars="none"
+    tools:context=".activity.RegisterActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="fill_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="@dimen/dimen24"
+            android:src="@drawable/logo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen18"
+            android:text="Register Form"
+            android:textSize="@dimen/size16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+            <EditText
+                android:id="@+id/txtnama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen18"
+                android:autofillHints="name"
+                android:background="@drawable/bg_input_active"
+                android:hint="Nama"
+                android:inputType="textPersonName"
+                android:padding="@dimen/dimen12" />
+
+            <EditText
+                android:id="@+id/txtemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="emailAddress"
+                android:background="@drawable/bg_input_active"
+                android:hint="@string/email"
+                android:inputType="textEmailAddress"
+                android:padding="@dimen/dimen12" />
+
+            <EditText
+                android:id="@+id/txttelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="phone"
+                android:background="@drawable/bg_input_active"
+                android:hint="Telepon"
+                android:inputType="phone"
+                android:padding="@dimen/dimen12" />
+
+
+            <EditText
+                android:id="@+id/txtusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                android:autofillHints="phone"
+                android:background="@drawable/bg_input_active"
+                android:hint="Username"
+                android:padding="@dimen/dimen12" />
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:id="@+id/txtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_active"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:paddingVertical="@dimen/dimen12" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen12"
+                app:boxBackgroundMode="none"
+                app:hintEnabled="false"
+                app:passwordToggleEnabled="true">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_input_active"
+                    android:hint="@string/ulangi_password"
+                    android:inputType="textPassword"
+                    android:paddingVertical="@dimen/dimen12" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen32"
+            android:backgroundTint="@color/primaryColor"
+            android:padding="@dimen/dimen12"
+            android:text="@string/daftar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
