@@ -1,6 +1,6 @@
 # e-Kost Pink
 
-**e-Kost Pink** adalah aplikasi mobile berbasis Android yang dirancang untuk mempermudah manajemen rumah kost skala kecil, khususnya Kost Pink di Kota Depok. Aplikasi ini dikembangkan sebagai bagian dari skripsi pada Program Studi Teknik Informatika, BINUS Online Learning, menggunakan metode Waterfall.
+**e-Kost Pink** adalah aplikasi mobile berbasis Android yang dirancang untuk mempermudah manajemen rumah kost skala kecil, khususnya Kost Pink di Kota Depok. Aplikasi ini dikembangkan sebagai bagian dari skripsi pada Program Studi Teknik Informatika, BINUS University, menggunakan metode Waterfall.
 
 ## 📱 Fitur Utama
 
