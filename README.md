@@ -26,13 +26,6 @@ Pengembangan aplikasi ini menggunakan model **Waterfall**, dengan tahapan:
 - Semua fitur utama berfungsi dengan baik berdasarkan hasil pengujian black-box.
 - Hasil kuesioner menunjukkan aplikasi berada pada kategori **"Highly Feasible"** dengan tingkat kelayakan rata-rata di atas 80%.
 
-## 📂 Struktur Proyek
-e-kost-pink/
-├── android studio/ # Source code aplikasi mobile
-├── web administrator/ # Dashboard admin berbasis web
-├── database/ # Struktur dan file SQL
-└── README.md
-
 ## 👨‍🎓 Tentang Penulis
 **Syifa Dwianuga** & **Wahyu Adit Pratama**  
 Diploma in Telecommunication, Politeknik Negeri Jakarta  
