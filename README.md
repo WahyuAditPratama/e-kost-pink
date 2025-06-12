@@ -36,7 +36,7 @@ e-kost-pink/
 ## 👨‍🎓 Tentang Penulis
 **Syifa Dwianuga** & **Wahyu Adit Pratama**  
 Diploma in Telecommunication, Politeknik Negeri Jakarta  
-binus university – Computer Science Department
+Binus University – Computer Science Department
 
 ## 🔗 Repository
 [https://github.com/WahyuAditPratama/e-kost-pink](https://github.com/WahyuAditPratama/e-kost-pink)
